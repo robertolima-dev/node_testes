@@ -1,0 +1,10 @@
+language: node_js 
+node_js:  
+  - "stable" 
+before_install:  
+  - export CHROME_BIN=chromium-browser 
+services:  
+  - xvfb 
+script:  
+  - npm install  
+  - npm run test
